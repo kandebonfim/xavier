@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
+  devise :omniauthable, :omniauth_providers => [:facebook]
 
   def set_default_role
     self.role ||= :user
