@@ -25,6 +25,7 @@ gem 'pg'
 gem 'slim-rails'
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'itcsscli', '~> 0.1.10'
 
 group :development, :test do
   gem 'byebug', platform: :mri
