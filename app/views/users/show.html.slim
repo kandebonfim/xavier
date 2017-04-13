@@ -1,4 +1,7 @@
 .section
   .container
-    h3 = @user.name if @user.email
-    p = @user.email if @user.email
+    .profile
+      .profile__image.profile__image--large.bg-center-cover style="background-image: url(http://graph.facebook.com/#{current_user.uid}/picture?type=large)"
+      .align-self-center
+        .profile__name = @user.name if @user.email
+        .profile__level Level 11

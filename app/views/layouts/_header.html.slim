@@ -2,6 +2,8 @@
   = link_to root_path, class: 'no-line-height align-self-center' do
     = image_tag 'xavier.svg', width: 140
   - if user_signed_in?
-    .align-self-center = current_user.name
+    .profile.align-self-center
+      .align-self-center = current_user.name
+      .profile__image.bg-center-cover style="background-image: url(#{current_user.image})"
   - else
     = link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: 'btn'
