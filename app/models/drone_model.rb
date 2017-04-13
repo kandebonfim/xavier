@@ -1,3 +1,3 @@
 class DroneModel < ApplicationRecord
-  belongs_to :drone
+  # belongs_to :drone
 end

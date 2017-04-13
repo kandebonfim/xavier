@@ -1,4 +1,4 @@
 class Drone < ApplicationRecord
   belongs_to :user
-  has_one :drone_model
+  belongs_to :drone_model
 end
