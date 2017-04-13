@@ -1,0 +1,4 @@
+.header
+  = link_to root_path, class: 'no-line-height align-self-center' do
+    = image_tag 'xavier.svg', width: 140
+  = link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: 'btn'
